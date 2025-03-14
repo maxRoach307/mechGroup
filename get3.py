@@ -1,20 +1,22 @@
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 import matplotlib.animation as animation
+import matplotlib
+matplotlib.use("TkAgg")  # Or try "TkAgg", "Qt5Agg", or "MacOSX"
+import matplotlib.pyplot as plt
 import time
 #import animation
 from functions import *
 
 
 def main():
-    
+    print("Ploting")
     #initial variables
     N_springs = 10
     dx = 0.3
-    k = 0.1
-    M = 10
-    m = 1
+    k = 8407.6
+    M = 9.47*10**(-7)
+    m = 0.1
     V_X = 0
     V_Y = -0.1
     X = 1.4
@@ -43,13 +45,13 @@ def main():
     #var2 is the parameter you're changing to observe var1 at different values of var2. You're not plotting var2.
     
     global var1
-    var1 = 'k'
+    var1 = 'V_Y'
     start1 = 0.01
-    end1 = 10
-    step1 = 0.5
+    end1 = 1000
+    step1 = 50
     
     global var2
-    var2 = 'V_Y'
+    var2 = 'm'
     start2 = -200
     end2 = -1
     step2 = 10

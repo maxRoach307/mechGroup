@@ -21,7 +21,7 @@ def update(frame):
     px = df.iloc[frame,1]#'pX']
     py = df.iloc[frame,2]#'pY']
     ax.scatter(px, py, color='blue')  # Solid core
-    ax.scatter(px, py, color='blue', s=R**2, alpha=0.5)
+    ax.scater(px, py, color='blue', s=R**2, alpha=0.5)
     ax.legend()
     ax.set_ybound(-1,3)
 

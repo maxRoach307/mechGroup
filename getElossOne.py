@@ -39,7 +39,6 @@ vy_cols = [f'{i}_y' for i in range(1, 11)]  # '1_y', '2_y', ..., '10_y'
  
 
 # Calculate kinetic energy at each timestep
-
 df['kinetic_energy'] = calculate_kinetic_energy(vx_cols, vy_cols, mass)
 
  

@@ -8,19 +8,20 @@ from functions import *
 
 
 def main():
+    print("Eloss to M graph")
     
     #initial variables
     N_springs = 10
     dx = 0.3
     k = 1.1
-    M = 10
+    M = 9.47*10**(-7)
     m = 1
     V_X = 0
-    V_Y = -2
+    V_Y = -99.9
     X = 1.4
     Y = 1.5
     R = 1
-    dt = 0.01
+    dt = 0.001
     timesteps = 10000
     show_frame_timer = 2500
     f = 0
@@ -38,10 +39,10 @@ def main():
     #step is the step size between points on the plot. 
     #This doesn't graph something including both start and end, only including start. But you change how to define step to include end.
     global var 
-    var = 'k'
-    start = 0.1
-    end = 10
-    step = 0.5
+    var = 'M'
+    start = 9.47*10**(-7)
+    end = 1
+    step = 0.01
     
     #Changing the initial value of the choosen var to start
     if (var == 'dx'):

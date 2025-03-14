@@ -9,19 +9,20 @@ from functions import *
 def main():
     N_springs = 10
     dx = 0.3
-    k = 0.1
-    M = 10
-    m = 1
+    m = 5
+    k = m*84076
+    M = 0.1*10**(-3)
+    
     V_X = 0
-    V_Y = -250
+    V_Y = -10*10**3
     X = 1.4
     Y = 1.5
-    R = 1
-    dt = 0.01
+    R = 0.001
+    dt = 0.000001
     timesteps = 10000
     show_frame_timer = 2500
     f = 0
-    epsilon = 0.0001
+    epsilon = 0.000001
     Force = 0
 
     springs = init_springs(N_springs, dx, k, m)
