@@ -42,7 +42,7 @@ def main():
     var = 'M'
     start = 9.47*10**(-7)
     end = 1
-    step = 0.01
+    step = 0.001
     
     #Changing the initial value of the choosen var to start
     if (var == 'dx'):

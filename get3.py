@@ -22,9 +22,9 @@ def main():
     X = 1.4
     Y = 1.5
     R = 1
-    dt = 0.01
-    timesteps = 10000
-    show_frame_timer = 2500
+    dt = 0.001
+    timesteps = 100000
+    show_frame_timer = 25000
     f = 0
     epsilon = 0.0001
     Force = 0
@@ -47,11 +47,11 @@ def main():
     global var1
     var1 = 'V_Y'
     start1 = 0.01
-    end1 = 1000
-    step1 = 50
+    end1 = 10000
+    step1 = 1
     
     global var2
-    var2 = 'm'
+    var2 = 'V_Y'
     start2 = -200
     end2 = -1
     step2 = 10
